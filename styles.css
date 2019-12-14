@@ -1,0 +1,311 @@
+html{
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+.container{
+    width: 100%;
+    min-width: 350px;
+    max-width: 940px;
+    margin: 0 auto;
+}
+
+:root {
+    --primary-white-color: #ffffff;
+    --primary-white-invisible-color: rgba(255, 255, 255, 0);
+    --primary-red-color: #ff4e50;
+    --primary-dark-color: #333333;
+    --primary-grey-color: #666666;
+    --primary-yellow-color: #ffa507;
+    --primary-ligthgreen-color: #1cd7ad;
+    --primary-blue-color: #4e73db;
+  }
+
+  @font-face {
+    font-family: "DroidSerif-Italic";
+    src: url("./fonts/DroidSerifItalic.woff") format("woff");
+    font-weight: 700;
+    font-style: italic;
+  }
+  
+  @font-face {
+    font-family: "Montserrat-Bold";
+    src: url("./fonts/Montserrat-Bold.woff2") format("woff");
+    font-weight: 900;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: "Montserrat";
+    src: url("./fonts/Montserrat-Regular.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: "RobotoSlab-Regular";
+    src: url("./fonts/RobotoSlab-Regular.woff2") format("woff");
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: "Wisdom";
+    src: url("./fonts/WisdomScriptAJ.woff") format("woff");
+    font-weight: normal;
+    font-style: italic;
+  }
+
+  @font-face {
+    font-family: Roboto-light;
+    src: url("./fonts/Roboto-Light.woff2") format("woff");
+    font-weight: normal;
+    font-style: normal;
+  }
+
+header{
+    background: url(img/thema.png) center no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 70px;
+    background-color: rgba( 0, 0, 0, 0.8);
+}
+
+.header nav .main-menu{
+    display: flex;
+    text-transform: capitalize;
+    justify-content: center;
+    list-style: none;
+    text-decoration: none;
+    padding-top: 20px;
+  margin-bottom: 125px;
+}
+
+.header nav li{
+display: flex;
+justify-content: center;
+align-items: center;
+width: 89px;
+  height: 32px;
+  border: 2px solid var(--primary-white-invisible-color);
+  border-radius: 18px;
+  transition: 0.2s linear;
+}
+
+.header nav li: :hover{
+  border-color: var(--primary-white-color);
+  transition: 0.2s linear;
+}
+
+.header nav a{
+  text-decoration: none;
+  font-family: "Montserrat-Bold";
+  font-size: 14px;
+  color: var(--primary-white-color);
+}
+
+
+.title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.title h2{
+    text-transform: uppercase;
+    font-family: "Montserrat-Bold";
+    color: var(--primary-white-color);
+    font-size: 52px;
+}
+
+
+h1 > a {
+  text-decoration: none;
+  font-family: "Montserrat-Bold";
+  font-size: 20px;
+  color: var(--primary-white-color);
+  text-transform: uppercase;
+}
+
+.title {
+  text-align: center;
+  padding-bottom: 138px;
+}
+
+.title h2 {
+  text-decoration: none;
+  width: 600px;
+  font-family: "Montserrat-Bold";
+  font-size: 52px;
+  color: var(--primary-white-color);
+  text-transform: uppercase;
+  margin: 0 auto 20px;
+}
+
+.title p {
+  text-decoration: none;
+  width: 500px;
+  font-family: "Roboto-light";
+  font-size: 24px;
+  color: var(--primary-white-color);
+  margin: 0 auto 20px;
+}
+
+.title p::first-letter {
+  text-transform: uppercase;
+}
+
+
+.button {
+  text-align: center;
+}
+
+.title button {
+  width: 280px;
+  height: 40px;
+  border-style: none;
+  border-radius: 20px;
+  background-color: var(--primary-red-color);
+  cursor: pointer;
+  font-family: "Montserrat-Bold";
+  font-size: 14px;
+  color: var(--primary-white-color);
+}
+
+.title button::first-letter {
+  text-transform: uppercase;
+}
+
+.article h2 {
+  width: 500px;
+  font-family: "Montserrat-Bold";
+  font-size: 22px;
+  color: var(--primary-dark-color);
+  text-align: center;
+  margin: 0 auto 15px;
+}
+
+.article h2::first-letter {
+  text-transform: uppercase;
+}
+
+.all-partners{
+  display: flex;
+  justify-content: space-between;
+}
+
+.partner {
+  width: 220px;
+  text-align: center;
+  margin: 0 auto 30px;
+  position: relative;
+}
+
+.partner::before {
+  content: "";
+  display: block;
+  background-position-x: center;
+  width: 122px;
+  height: 122px;
+  margin: 0 auto 20px;
+  border-radius: 50%;
+}
+
+.par1::before {
+  background: url(img/man.png) center center no-repeat;
+}
+
+.par2::before {
+  background: url(img/lady.png) no-repeat;
+}
+
+.par3::before {
+  background: url(img/guy.png) no-repeat;
+}
+
+.par4::before {
+  background: url(img/girl.png) no-repeat;
+}
+
+partner h3 {
+  margin-bottom: 20px;
+}
+
+.partner a {
+  text-decoration: none;
+  font-family: "Montserrat-Bold";
+  font-size: 14px;
+  color: var(--primary-dark-color);
+  text-transform: capitalize;
+}
+
+.partner p {
+  font-family: "Roboto-Light";
+  font-size: 14px;
+  color: var(--primary-grey-color);
+}
+
+.partner a::after {
+  content: "";
+  display: block;
+  width: 40px;
+  height: 40px;
+  margin: 0 auto 20px;
+  border: 4px solid var(--primary-white-color);
+  border-radius: 50%;
+  position: absolute;
+  top: 82px;
+  right: 50px;
+}
+
+.par1 a::after {
+  background: url(img/tv.png) center center no-repeat var(--primary-red-color);
+}
+
+.par2 a::after {
+  background: url(img/math.png) center center no-repeat
+    var(--primary-yellow-color);
+}
+
+.par3 a::after {
+  background: url(img/chemia.png) center center no-repeat
+    var(--primary-ligthgreen-color);
+}
+
+.par4 a::after {
+  background: url(img/telegram.png) center center no-repeat
+    var(--primary-blue-color);
+}
+
+.button{
+  display: flex;
+  justify-content: center;
+}
+
+button {
+  text-align: center;
+  width: 280px;
+  height: 40px;
+  border-style: none;
+  background: none;
+  border: 2px solid var(--primary-red-color);
+  border-radius: 20px;
+  font-family: "Montserrat-Bold";
+  font-size: 14px;
+  color: var(--primary-red-color);
+  margin-bottom: 57px;
+  cursor: pointer;
+}
+
+button::first-letter {
+  text-transform: uppercase;
+}
+
