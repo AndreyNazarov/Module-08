@@ -77,44 +77,46 @@ header{
     background-color: rgba( 0, 0, 0, 0.8);
 }
 
-.header{
-  display: flex;
-  justify-content: space-between;
-}
 
-.header nav .main-menu{
-    display: flex;
-    text-transform: capitalize;
-    list-style: none;
-    text-decoration: none;
-    padding-top: 20px;
+.header nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
   margin-bottom: 125px;
 }
 
-.header nav li{
-display: flex;
-justify-content: center;
-align-items: center;
-width: 100%;
-min-width: 89px;
+.header nav a::first-letter {
+  text-transform: uppercase;
+}
+
+.header nav li:not(:last-child) {
+  margin-right: 1px;
+}
+
+.header nav li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 86px;
   height: 32px;
   border: 2px solid var(--primary-white-invisible-color);
   border-radius: 18px;
   transition: 0.2s linear;
 }
 
-.header nav li:hover{
+.header nav li:hover {
   border-color: var(--primary-white-color);
   transition: 0.2s linear;
-  padding-bottom: 20px;
 }
 
-.header nav a{
+.header nav a {
   text-decoration: none;
   font-family: "Montserrat-Bold";
   font-size: 14px;
   color: var(--primary-white-color);
 }
+
 
 
 .title{
