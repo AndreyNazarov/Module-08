@@ -131,20 +131,16 @@ h1 > a {
   text-transform: uppercase;
 }
 
-.title{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+.title {
   text-align: center;
   padding-bottom: 138px;
 }
 
 .title h2 {
   text-decoration: none;
-  width: 600px;
+  width: 320px;
   font-family: "Montserrat-Bold";
-  font-size: 52px;
+  font-size: 30px;
   color: var(--primary-white-color);
   text-transform: uppercase;
   margin: 0 auto 20px;
@@ -152,9 +148,9 @@ h1 > a {
 
 .title p {
   text-decoration: none;
-  width: 500px;
-  font-family: "Roboto-light";
-  font-size: 24px;
+  width: 220px;
+  font-family: "Roboto-Light";
+  font-size: 18px;
   color: var(--primary-white-color);
   margin: 0 auto 20px;
 }
@@ -162,7 +158,6 @@ h1 > a {
 .title p::first-letter {
   text-transform: uppercase;
 }
-
 
 .button {
   text-align: center;
