@@ -13,7 +13,7 @@ html{
 .container{
     width: 100%;
     min-width: 350px;
-    max-width: 940px;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
@@ -333,17 +333,18 @@ button::first-letter {
   }
 
   .title h2 {
-    width: 532px;
+    width: 70%;
     font-size: 52px;
   }
 
   .title p {
-    width: 100%;
+    width: 70%;
   }
 
 
   .all-partners {
-    width: 492px;
+    width: 100%;
+    min-width: 492px;
     margin: 0 auto;
     flex-direction: row;
     flex-wrap: wrap;
@@ -357,7 +358,7 @@ button::first-letter {
 
 @media screen and (min-width: 1200px) {
   .conteiner {
-    width: 940px;
+    width: 100%;
   }
 
   .header {
