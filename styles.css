@@ -123,13 +123,8 @@ min-width: 89px;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-}
-
-.title h2{
-    text-transform: uppercase;
-    font-family: "Montserrat-Bold";
-    color: var(--primary-white-color);
-    font-size: 52px;
+    text-align: center;
+    padding-bottom: 138px;
 }
 
 
@@ -149,10 +144,6 @@ h1{
   margin-top: 20px;
 }
 
-.title {
-  text-align: center;
-  padding-bottom: 138px;
-}
 
 .title h2 {
   text-decoration: none;
@@ -343,7 +334,7 @@ button::first-letter {
 
 
   .all-partners {
-    width: 100%;
+    width: 492px;
     min-width: 492px;
     margin: 0 auto;
     flex-direction: row;
@@ -358,7 +349,7 @@ button::first-letter {
 
 @media screen and (min-width: 1200px) {
   .conteiner {
-    width: 100%;
+    width: 940px;
   }
 
   .header {
